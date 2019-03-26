@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef">
+  <RelativeLayout
+      android:id="@+id/barre_etat"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:padding="@dimen/padding_barre_etat"
+      android:background="@drawable/bg_barre_etat">
+    <TextView
+          android:id="@+id/score_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:textSize="@dimen/score_aide_text_size"
+          android:textColor="#fff"
+          android:text="SCORE : 0"
+          android:padding="3dp" />
+    <TextView
+          android:id="@+id/aide_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentRight="true"
+          android:textSize="@dimen/score_aide_text_size"
+          android:textColor="#fff"
+          android:text="AIDE"
+          android:paddingLeft="13dp"
+          android:background="@drawable/bg_aide"/>
+  </RelativeLayout>
+  <LinearLayout
+	android:gravity="center"
+	android:orientation="vertical"
+	android:id="@+id/layout_ques"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginBottom="40.0dip"
+	android:layout_above="@+id/layout_bas">
+    <TextView
+      android:textSize="16.0sp"
+      android:textStyle="bold"
+      android:textColor="#ff000000"
+      android:id="@+id/qst_en_cours"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20.0dip"
+      android:text="Niveau XX"
+      android:layout_above="@+id/charade_textView" />
+    
+    <TextView
+android:textSize="16.0sp"
+android:typeface="normal"
+android:textColor="#ff000000"
+android:gravity="center_horizontal"
+android:id="@+id/charade_textView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="10.0dip"
+android:layout_marginRight="10.0dip"
+android:layout_marginBottom="30.0dip"
+android:text="Quelle est la capitale de la Colombie ?" />
+    <LinearLayout
+android:layout_gravity="center_horizontal"
+android:orientation="horizontal"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="10.0dip">
+      <TextView android:typeface="normal" android:id="@+id/rep1" android:background="@drawable/bg_button_black" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+      <TextView android:typeface="normal" android:id="@+id/rep2" android:background="@drawable/bg_button_black" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" />
+      <TextView android:typeface="normal" android:id="@+id/rep3" android:background="@drawable/bg_button_black" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" />
+      <TextView android:typeface="normal" android:id="@+id/rep4" android:background="@drawable/bg_button_black" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" />
+      <TextView android:typeface="normal" android:id="@+id/rep5" android:background="@drawable/bg_button_black" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" />
+      <TextView android:typeface="normal" android:id="@+id/rep6" android:background="@drawable/bg_button_black" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" />
+      <TextView android:typeface="normal" android:id="@+id/rep7" android:background="@drawable/bg_button_black" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" />
+      <TextView android:typeface="normal" android:id="@+id/rep8" android:background="@drawable/bg_button_black" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" />
+    </LinearLayout>
+  </LinearLayout>
+  <LinearLayout
+	android:orientation="vertical"
+	android:id="@+id/layout_bas"
+	android:background="#fff25950"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_alignParentBottom="true"
+	android:layout_centerHorizontal="true">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+      <TextView android:typeface="normal" android:text="A" android:textColor="#000" android:textSize="@dimen/text_size_sw600dp_screen" android:gravity="center" android:id="@+id/case1" android:background="@drawable/clavier" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+      <TextView android:typeface="normal" android:text="A" android:textColor="#000" android:textSize="@dimen/text_size_sw600dp_screen" android:gravity="center" android:id="@+id/case2" android:background="@drawable/clavier" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" />
+      <TextView android:typeface="normal" android:text="A" android:textColor="#000" android:textSize="@dimen/text_size_sw600dp_screen" android:gravity="center" android:id="@+id/case3" android:background="@drawable/clavier" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" />
+      <TextView android:typeface="normal" android:text="A" android:textColor="#000" android:textSize="@dimen/text_size_sw600dp_screen" android:gravity="center" android:id="@+id/case4" android:background="@drawable/clavier" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" />
+      <TextView android:typeface="normal" android:text="A" android:textColor="#000" android:textSize="@dimen/text_size_sw600dp_screen" android:gravity="center" android:id="@+id/case5" android:background="@drawable/clavier" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" />
+      <TextView android:typeface="normal" android:text="A" android:textColor="#000" android:textSize="@dimen/text_size_sw600dp_screen" android:gravity="center" android:id="@+id/case6" android:background="@drawable/clavier" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip">
+      <TextView android:typeface="normal" android:text="A" android:textColor="#000" android:textSize="@dimen/text_size_sw600dp_screen" android:gravity="center" android:id="@+id/case7" android:background="@drawable/clavier" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+      <TextView android:typeface="normal" android:text="A" android:textColor="#000" android:textSize="@dimen/text_size_sw600dp_screen" android:gravity="center" android:id="@+id/case8" android:background="@drawable/clavier" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" />
+      <TextView android:typeface="normal" android:text="A" android:textColor="#000" android:textSize="@dimen/text_size_sw600dp_screen" android:gravity="center" android:id="@+id/case9" android:background="@drawable/clavier" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" />
+      <TextView android:typeface="normal" android:text="A" android:textColor="#000" android:textSize="@dimen/text_size_sw600dp_screen" android:gravity="center" android:id="@+id/case10" android:background="@drawable/clavier" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" />
+      <TextView android:typeface="normal" android:text="A" android:textColor="#000" android:textSize="@dimen/text_size_sw600dp_screen" android:gravity="center" android:id="@+id/case11" android:background="@drawable/clavier" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" />
+      <TextView android:typeface="normal" android:text="A" android:textColor="#000" android:textSize="@dimen/text_size_sw600dp_screen" android:gravity="center" android:id="@+id/case12" android:background="@drawable/clavier" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>

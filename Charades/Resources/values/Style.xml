@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="MyTheme.Splash" parent ="@android:style/Theme.Holo.Light.NoActionBar">
+    <item name="android:windowNoTitle">true</item>  
+    <item name="android:windowFullscreen">true</item>  
+    <item name="android:windowContentOverlay">@null</item>  
+    <item name="android:windowActionBar">true</item>  
+  </style>
+  <style name="MyTheme" parent="MyTheme.Base">
+    
+  </style>
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#185353</item>
+    <item name="colorPrimaryDark">#185353</item>
+    <item name="colorAccent">#185353</item>
+  </style>
+</resources>

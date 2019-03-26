@@ -2,4 +2,9 @@
 # Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
 ################################################################################
 
-/Charades/obj/Debug/80
+/packages
+/.vs/Charades/v15/Server/sqlite3
+/Charades/bin
+/Charades/obj
+/.vs/Charades/v15/.suo
+/Charades/Charades.csproj.user
